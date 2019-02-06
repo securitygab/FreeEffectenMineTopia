@@ -1,0 +1,535 @@
+# Thanks for using my plugin =D #
+
+Option:
+  UpdateNotify: true
+  BlockTime: 40
+  Signs: false
+  UseRaw: true
+  RawMsg: "&c&oNo trails selected !"
+  RawSelect: "&b&nClick here to open trail menu"
+  NoTrailsPerm: '&eYou dont have permission to this trail'
+  NoCmdPerm: '&eYou dont have permission'
+  IfTrailsAllow: '&a&lClick to select'
+  IfTrailsDisallow: '&c&lNo access to this trail'
+  Line: '&6------------------'
+  Selected: '&6You Selected &7'
+  None: 'None'
+  Back: '&fBack to main menu'
+  BackItemId: 381
+  BackItemData: 0
+  BackButton: true
+  MsgRemove: '&cTrail was disabled'
+  DisableWhenPlayerDontMoving: false
+  TimeToDisable: 15
+  KeepMenuOpen: false
+  # Main , Particles , Block , Rain
+  DefaultMenu: Main
+  HideInCombat: false
+  CombatTimeColdown: 40
+  SecoundClickRemove: false
+  QuitTrailRemove: false
+  HideInVanish: false #Request VanishNoPacket
+  Mode: 0 #0 = Default , 1 = Circle , 2 = Not named mode
+  CheckPermission: false #(If permission for player was removed it remove trail)
+  CheckPeriod: 100 #(Every 10sec by default)
+  CheckOnJoin: false
+  SaveTrails: false
+  ModeChanger: false
+  ModeChangerItemName: '&6&lChange mode'
+  ModeChangerSlot: 4
+  WingsTrail: true
+  HideWingsInMoving: false
+  Event: false
+  BlockChestOpening: false
+  EventMenuName: "Chest opening..."
+  EventOpenItemName: "&fOpen chest"
+  EventItem: "&fMy trails"
+  UnlockedParticle: "&e!Count!/25"
+  UnlockedBlocks: "&e!Count!/8"
+  UnlockedRains: "&e!Count!/5"
+  InvisHide: false
+  WingsMenu: Types #Angel , Bf , Types . Menu that will be openned by default (Bf - Butterfly)
+  WingsAnimation: true
+  BlockedWorlds:
+    - 12
+  LimitTrails: false
+  LimitPlayers: 10
+  LimitMessage: "&cYou're unable to select trails right now"
+  RainFix: false
+  PreventRainFromStuck: false
+  RainMinimalTimeAlive: false
+Customization:
+  ParticlesItem: 377
+  BlocksItem: 374
+  RainsItem: 370
+  WingsItem: 288
+  ParticlesSlot: 20
+  ParticlesSlotD: 19
+  BlocksSlot: 22
+  BlocksSlotD: 21
+  RainsSlot: 24
+  RainsSlotD: 23
+  RemoveSlot: 40
+  WingsSlot: 13
+  Rains:
+    Tear:
+      ItemDrop: GHAST_TEAR
+      CloudType: CLOUD
+    Blood:
+      ItemDrop: REDSTONE
+      CloudType: SMOKE_LARGE
+    Dia:
+      ItemDrop: DIAMOND
+      CloudType: CLOUD
+    Wart:
+      ItemDrop: NETHER_STALK
+      CloudType: SMOKE_LARGE
+    Gold:
+      ItemDrop: GOLD_NUGGET
+      CloudType: CLOUD
+CustomItemNameID:
+  ParticlesItem: 'BLAZE_POWDER'
+  BlocksItem: 'GLASS_BOTTLE'
+  RainsItem: 'GHAST_TEAR'
+  WingsItem: 'FEATHER'
+  DonationItem: 'COOKIE'
+  BackItem: 'ARROW'
+  JoinItem: 'BLAZE_POWDER'
+MySQL:
+  Enable: false
+  host: "localhost"
+  port: 3306
+  database: "db"
+  user: "user"
+  password: "password"
+Signs:
+  Line1: '&lClick to open'
+  Line2: '&ltrails menu'
+  Line3: '&8&n!T!'
+  Line4: ''
+Sounds: #Default sounds not working in 1.9
+  Enable: false
+  Particles: CAT_MEOW #
+  Blocks: DIG_GRAVEL
+  Rains: FIZZ
+  Remove: NOTE_PLING
+JoinItem:
+  Enable: false
+  Id: 377
+  Data: 0
+  Name: '&6Trails'
+  Slot: 8
+  LeftClick: false
+  RightClick: true
+MultipleTrails:
+  Enable: false
+  AddedMsg: '&aAdded &7'
+  Limit: 5
+  VipLimit: 10
+  AllR: '&cAll trails removed'
+  LMsg: '&cYou have max trails limit'
+  UMsg: '&cThis trail already used'
+  BMsg: '&cYou cant use more than one block trail'
+  RMsg: '&cYou cant use more than one rain trail'
+Extra:
+  #ALL INVENTORIES SHOULD HAVE DIFFERENT NAMES
+  ParticleItem: '&6&lParticle Trails'
+  BlockItem: '&2&lBlock Trails'
+  RainItem: '&3&lRain Trails'
+  BetaItem: '&7&lBeta Trails'
+  WingsItem: '&7&lWings Builder'
+  RemItem: "&c&lRemove Trails"
+  ChooseTypeMenu: 'Choose Type'
+  ParticleMenu: 'Trails'
+  BlockMenu: 'Block Trails'
+  RainMenu: 'Rain Trails'
+  List: 'Who using trails'
+  White: '&fWhite'
+  Red: '&cRed'
+  Yellow: '&eYellow'
+  Green: '&aGreen'
+  Blue: '&9Blue'
+  Purple: '&dPurple'
+  Black: '&7Black'
+  RTBpage1: 'Rain Trails Builder 1/2'
+  RTBpage2: 'Rain Trails Builder 2/2'
+  ModeMenu: "Choose mode"
+  DefaultMode: "Default mode"
+  CircleMode: "Circle mode"
+  NNMode : "NN mode"
+  AngelW: "&fAngel"
+  BfW: "&eButterfly"
+  Wings0: "Select wings type"
+  Wings1: "Select wings color 1/2"
+  Wings2: "Select wings contour 2/2"
+  Wings3: "Select third color 3/2"
+  SkipThird: "&7Click to skip third color"
+  Wings: 'Wings Trail'
+  Cancel: "&c&lDone"
+DonationButton:
+  Enable: false
+  Name: '&a&l!player!'
+  Lore:
+  - '&fHello'
+  ID: 1
+  Data: 0
+  Message: 'Get trails now ! Buy our premium packs'
+  Link: 'http://example.com/store/'
+RainPos:
+  TimeToRemove: 1
+  X: 0
+  Y: 4
+  Z: 0
+  ItemY: 3
+  ItemX: 0
+  ItemZ: 0
+Heart:
+  Display: true
+  Name: 'Heart Trail'
+  Item: '&cHeart'
+  ITA: ''
+  ITD: ''
+  S: 9
+  Y: 0.5
+Angry:
+  Display: true
+  Name: 'Angry Trail'
+  Item: '&6Angry'
+  ITA: ''
+  ITD: ''
+  S: 10
+  Y: 0.5
+Magic:
+  Display: true
+  Name: 'Magic Trail'
+  Item: '&3Magic'
+  Speed: 0
+  ITA: ''
+  ITD: ''
+  S: 11
+  Y: 1
+Fun:
+  Display: true
+  Name: 'Color Trail'
+  Item: '&eColors'
+  ITA: ''
+  ITD: ''
+  S: 12
+  Y: 0.5
+Cloud:
+  Display: true
+  Name: 'Cloud Trail'
+  Item: '&fCloud'
+  Speed: 0
+  ITA: ''
+  ITD: ''
+  S: 13
+  Y: 1
+  Speed: 0.0
+Witch:
+  Display: true
+  Name: 'Witch Trail'
+  Item: '&bWitch Magic'
+  Speed: 0.3
+  ITA: ''
+  ITD: ''
+  S: 14
+  Y: 0.5
+Ender:
+  Display: true
+  Name: 'Ender Trail'
+  Item: '&5Ender'
+  Speed: 0.5
+  ITA: ''
+  ITD: ''
+  S: 15
+  Y: 0.5
+Green:
+  Display: true
+  Name: 'Green Trail'
+  Item: '&aGreen'
+  ITA: ''
+  ITD: ''
+  S: 16
+  Y: 0.5
+Spark:
+  Display: true
+  Name: 'Spark Trail'
+  Item: '&fSpark'
+  Speed: 0.4
+  ITA: ''
+  ITD: ''
+  S: 17
+  Y: 0.5
+Flame:
+  Display: true
+  Name: 'Flame Trail'
+  Item: '&6Flame'
+  Speed: 0
+  ITA: ''
+  ITD: ''
+  S: 18
+  Y: 0.5
+WhiteMagic:
+  Display: true
+  Name: 'White Magic Trail'
+  Item: '&fWhite Magic'
+  Speed: 0.3
+  ITA: ''
+  ITD: ''
+  S: 19
+  Y: 0.5
+Note:
+  Display: true
+  Name: 'Music Trail'
+  Item: '&dMusic'
+  ITA: ''
+  ITD: ''
+  S: 20
+  Y: 0
+Snow:
+  Display: true
+  Name: 'Snow Trail'
+  Item: '&fSnow'
+  Speed: 0.2
+  ITA: ''
+  ITD: ''
+  S: 21
+  Y: 0.5
+Water:
+  Display: true
+  Name: 'Water Trail'
+  Item: '&bWater'
+  ITA: ''
+  ITD: ''
+  S: 22
+  Y: 0.5
+Lava:
+  Display: true
+  Name: 'Lava Trail'
+  Item: '&6Lava'
+  ITA: ''
+  ITD: ''
+  S: 23
+  Y: 0.5
+Crit:
+  Display: true
+  Name: 'Crit Trail'
+  Item: '&6Crit'
+  Speed: 0.2
+  ITA: ''
+  ITD: ''
+  S: 24
+  Y: 0.5
+Smoke:
+  Display: true
+  Name: 'Smoke Trail'
+  Item: '&7Smoke'
+  Speed: 0.2
+  ITA: ''
+  ITD: ''
+  S: 25
+  Y: 0.5
+Spell:
+  Display: true
+  Name: 'Spell Trail'
+  Item: '&5Spell'
+  ITA: ''
+  ITD: ''
+  S: 26
+  Y: 0.5
+Enchant:
+  Display: true
+  Name: 'Enchant Trail'
+  Item: '&fEnchant'
+  Speed: 0
+  ITA: ''
+  ITD: ''
+  S: 27
+  Y: 0.5
+Splash:
+  Display: true
+  Name: 'Splash Trail'
+  Item: '&9Splash'
+  ITA: ''
+  ITD: ''
+  S: 28
+  Y: 0.5
+Slime:
+  Display: true
+  Name: 'Slime Trail'
+  Item: '&aSlime'
+  ITA: ''
+  ITD: ''
+  S: 29
+  Y: 0.5
+Snowball:
+  Display: true
+  Name: 'Snowball Trail'
+  Item: '&fSnowballs'
+  ITA: ''
+  ITD: ''
+  S: 30
+  Y: 0.5
+Spell2:
+  Name: 'Spell2 Trail'
+  # Item = Spell1
+  # S = Spell1
+  Y: 0.5
+Red:
+  Display: true
+  Name: 'Red Trail'
+  Item: '&4Red'
+  ITA: ''
+  ITD: ''
+  S: 31
+  Y: 0.5
+Void:
+  Display: true
+  Name: 'Void Trail'
+  Item: '&7Void'
+  ITA: ''
+  ITD: ''
+  S: 31
+  Y: 0.5
+Pop:
+  Display: true
+  Name: 'Pop Trail'
+  Item: '&ePop'
+  ITA: ''
+  ITD: ''
+  S: 32
+  Y: 0.5
+Rainbow:
+  Display: true
+  Name: 'Rainbow Trail'
+  Item: '&6Rainbow'
+  ITA: ''
+  ITD: ''
+  S: 33
+  Y: 0.3
+Breath:
+  Display: true
+  Name: 'Dragon Breath Trail'
+  Item: '&5Breath'
+  ITA: ''
+  ITD: ''
+  S: 34
+  Y: 0.3
+EndRod:
+  Display: true
+  Name: 'EndRod Trail'
+  Item: '&fEndRod'
+  ITA: ''
+  ITD: ''
+  S: 35
+  Y: 0.3
+Damage:
+  Display: true
+  Name: 'Damage Trail'
+  Item: '&4Damage'
+  ITA: ''
+  ITD: ''
+  S: 36
+  Y: 0
+FSand:
+  Display: true
+  Name: 'Sand Trail'
+  Item: '&eSand'
+  Speed: 0.2
+  ITA: ''
+  ITD: ''
+  S: 37
+  Y: 0
+Totem:
+  Display: true
+  Name: 'Totem trail'
+  Item: '&7Totem'
+  Speed: 0.2
+  ITA: ''
+  ITD: ''
+  S: 38
+  Y: 0.4
+Blocks:
+  Name:
+    Rainbow: 'Rainbow Glass'
+    Flower: 'Flower Blocks'
+    Carpet: 'Carpet Blocks'
+    Redstone: 'Redstone Blocks'
+    Sea: 'Sea Blocks'
+    Wheat: 'Wheat Blocks'
+    Ore: 'Ore Blocks'
+    Clay: 'Clay Blocks'
+  Items:
+    Rainbow: '&fRainbow Blocks'
+    Flower: '&cFlower Blocks'
+    Carpet: '&eCarpet Blocks'
+    Redstone: '&aRedstone Blocks'
+    Sea: '&9Sea Blocks'
+    Wheat: '&5Wheat Blocks'
+    Ore: '&6Ore Blocks'
+    Clay: '&3Clay Blocks'
+  Slot:
+    Rainbow: 11
+    Flower: 12
+    Carpet: 13
+    Redstone: 14
+    Sea: 15
+    Wheat: 22
+    Ore: 21
+    Clay: 23
+  ITA:
+    Rainbow: ''
+    Flower: ''
+    Carpet: ''
+    Redstone: ''
+    Sea: ''
+    Wheat: ''
+    Ore: ''
+    Clay: ''
+  ITD:
+    Rainbow: ''
+    Flower: ''
+    Carpet: ''
+    Redstone: ''
+    Sea: ''
+    Wheat: ''
+    Ore: ''
+    Clay: ''
+Rains:
+  Name:
+    Tear: 'Tear Rain'
+    Blood: 'Blood Rain'
+    Dia: 'Dia Rain'
+    Wart: 'Wart Rain'
+    Gold: 'Gold Rain'
+    Builder: 'Custom Rain'
+  Items:
+    Tear: '&6Tear Rain'
+    Blood: '&4Blood Rain'
+    Dia: '&bDia Rain'
+    Wart: '&5Wart Rain'
+    Gold: '&6Gold Rain'
+    Builder: '&aRain Builder'
+  Slot:
+    Tear: 11
+    Blood: 12
+    Dia: 13
+    Wart: 14
+    Gold: 15
+    Builder: 31
+  ITA:
+    Tear: ''
+    Blood: ''
+    Dia: ''
+    Wart: ''
+    Gold: ''
+    Builder: ''
+  ITD:
+    Tear: ''
+    Blood: ''
+    Dia: ''
+    Wart: ''
+    Gold: ''
+    Builder: ''
+    

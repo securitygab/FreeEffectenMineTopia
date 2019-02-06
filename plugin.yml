@@ -1,0 +1,186 @@
+name: SuperTrails
+main: me.kvq.plugin.trails.main
+version: 9.6.9
+author: kvq
+commands:
+  trails:
+    description: null
+  trailsid:
+    description: null
+  supertrails:
+    description: null
+permissions:
+  trail.allow:
+    description: null
+    default: op
+  trail.all:
+    description: null
+    default: op
+  trail.heart:
+    description: null
+    default: op
+  trail.angry:
+    description: null
+    default: op
+  trail.magic:
+    description: null
+    default: op
+  trail.fun:
+    description: null
+    default: op
+  trail.cloud:
+    description: null
+    default: op
+  trail.wmagic:
+    description: null
+    default: op
+  trail.ender:
+    description: null
+    default: op
+  trail.green:
+    description: null
+    default: op
+  trail.spark:
+    description: null
+    default: op
+  trail.flame:
+    description: null
+    default: op
+  trail.white:
+    description: null
+    default: op
+  trail.note:
+    description: null
+    default: op
+  trail.snow:
+    description: null
+    default: op
+  trail.water:
+    description: null
+    default: op
+  trail.lava:
+    description: null
+    default: op
+  trail.crit:
+    description: null
+    default: op
+  trail.smoke:
+    description: null
+    default: op
+  trail.spell:
+    description: null
+    default: op
+  trail.enchant:
+    description: null
+    default: op
+  trail.splash:
+    description: null
+    default: op
+  trail.slime:
+    description: null
+    default: op
+  trail.snowball:
+    description: null
+    default: op
+  trail.red:
+    description: null
+    default: op
+  trail.void:
+    description: null
+    default: op
+  trail.pop:
+    description: null
+    default: op
+  trail.blocks:
+    description: null
+    default: op
+  trail.block.rainbow:
+    description: null
+    default: op
+  trail.block.flower:
+    description: null
+    default: op
+  trail.block.carpet:
+    description: null
+    default: op
+  trail.block.sea:
+    description: null
+    default: op
+  trail.block.redstone:
+    description: null
+    default: op
+  trail.block.wheat:
+    description: null
+    default: op
+  trail.block.ore:
+    description: null
+    default: op
+  trail.block.clay:
+    description: null
+    default: op
+  trail.rains:
+    description: null
+    default: op
+  trail.rain.tear:
+    description: null
+    default: op
+  trail.rain.blood:
+    description: null
+    default: op
+  trail.rain.dia:
+    description: null
+    default: op
+  trail.rain.wart:
+    description: null
+    default: op
+  trail.rain.gold:
+    description: null
+    default: op
+  trail.rain.builder:
+    description: null
+    default: op
+  trail.nolimit:
+    description: null
+    default: op
+  trail.limit.vip:
+    description: null
+    default: op
+  trail.limit.bypass:
+    description: null
+    default: op
+  trail.rainbow:
+    description: null
+    default: op
+  trail.modemenu:
+    description: null
+    default: op
+  trail.mode.circle:
+    description: null
+    default: op
+  trail.mode.nn:
+    description: null
+    default: op
+  trail.wings:
+    description: null
+    default: op
+  trail.breath:
+    description: null
+    default: op
+  trail.endrod:
+    description: null
+    default: op
+  trail.damage:
+    description: null
+    default: op
+  trail.sand:
+    description: null
+    default: op
+  trail.totem:
+    description: null
+    default: op
+  trail.wing.angel:
+    default: op
+  trail.wing.bf:
+    default: op
+  trail.event:
+    default: op
